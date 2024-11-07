@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <title>Afiliación</title>
+
+    
+  </head>
+  <body>
+    <div class="titulo-arriba"></div>
+   <h1>Vení al Gym!💪🏼</h1>
+   
+   <form action=" https://postman-echo.com/post" method="post" target="_blank">
+      
+    <fieldset>
+       
+        <legend class="titulos">🙋🏼‍♂️Datos Personales👀</legend>
+        
+        <div class="mi-div">
+          <label for="lbl-nombre" class="bloque">Nombre:*</label>
+          <input type="text" name="nombre" id="lbl-nombre" required class="campo-entrada" >
+        </div>
+
+        <div>
+          <label for="lbl-apellido" class="bloque">Apellido:*</label>
+          <input type="text" name="apellido" id="lbl-apellido" required class="campo-entrada">
+        </div>
+
+          <div>
+            <label for="lbl-dni" class="bloque">Documento:*</label>
+            <input type="number" name="dni" id="lbl-dni" required class="campo-entrada">
+          </div>
+          
+          <div>
+            <label for="lbl-pais" class="bloque">Nacionalidad:*</label>
+            <input list="nacion" type="text" name="nacionalidad" id="lbl-pais" placeholder=" - Seleccionar -" required class="campo-pais">
+            <datalist id="nacion">
+              <option value="Argentina">
+              <option value="Brasileña">
+              <option value="Uruguaya">
+              <option value="Otra">
+              
+            </datalist>
+          </div>
+
+          <div>
+            <label>Contanos un poco de vos...</label>
+           <textarea name="descripcion"  cols="30" rows="3" class="campo-entrada bloque campo-descripcion" ></textarea>
+          </div>
+        
+          <fieldset>
+           
+              <legend>Sexo:*</legend>
+              
+              <input type="radio" name="sexo" value="femenino" required id="fem">
+              <label for="fem">Femenino</label>
+              <input type="radio" name="sexo" value="masculino" required id="masc">
+              <label for="masc">Masculino</label>
+              <input type="radio" name="sexo" value="otro" required id="o">
+              <label for="o">Otro</label>
+      
+          </fieldset>    
+            
+        </fieldset>
+        
+        <div class="bolas"></div>
+     
+
+      <fieldset>
+        <legend class="titulos">📱Datos de contacto📧</legend>
+       
+        <div>
+          <label for="lbl-tel" class="bloque">Telefono:*</label>
+          <input type="number" placeholder="Código de área y número" id="lbl-tel" required class="campo-entrada">
+        </div>
+
+        <div>
+          <label for="lbl-email" class="bloque">Dirección de correo electrónico:*</label>
+          <input type="email" placeholder="Ej:mail@gmail.com" id="lbl-email" required class="campo-entrada">
+        </div>
+
+      </fieldset>
+
+      <div class="bolas"></div>
+
+      <fieldset>
+        <legend class="titulos">🚴🏼‍♂️Actividades🤸🏼‍♂️</legend>
+        <p>Por favor, indicá cuáles actividades te interesan.</p>
+
+       <p>Sede Palermo:</p>
+
+        <input type="checkbox" name="deportes" value="Basquet" id="basq">
+        <label for="basq">Básquet</label>
+        <input type="checkbox" name="deportes" value="Boxeo" id="box">
+        <label for="box">Boxeo</label>
+        <input type="checkbox" name="deportes" value="Futbol" id="fulbo">
+        <label for="fulbo">Futbol</label>
+        <input type="checkbox" name="deportes" value="Tenis" id="ten">
+        <label for="ten">Tenis</label>
+      
+
+      
+        <p>Sede Palermo</p>
+
+        <input type="checkbox" name="deportes" value="Basquet" id="basq2">
+        <label for="basq2">Básquet</label>
+        <input type="checkbox" name="deportes" value="Boxeo" id="box2">
+        <label for="box2">Boxeo</label>
+        <input type="checkbox" name="deportes" value="Futbol" id="fulbo2">
+        <label for="fulbo2">Futbol</label>
+        <input type="checkbox" name="deportes" value="Tenis" id="ten2">
+        <label for="ten2">Tenis</label>
+      
+
+      </fieldset>
+      
+      <div>
+      <input type="checkbox" required>
+      <label class="blanco">Acepto las condiciones*</label>
+      
+      </div>
+
+      <div>
+        <input type="checkbox">
+        <label class="blanco">Deseo recibir novedades</label>
+       
+        </div>
+        
+        <p class="blanco">*:campo obligatorio.</p>
+
+        <button type="submit" >Iniciar afiliación</button>
+        <button type="reset">Restablecer</button>
+
+        </form>
+      
+
+
+
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
