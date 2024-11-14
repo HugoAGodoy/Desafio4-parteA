@@ -100,3 +100,10 @@ fieldset:focus-within > legend {
   border-color: #2B3D37;
 }
 
+.imagen-2 {
+  background-image: url(public/disneys-pop-century-resort450.webp);
+}
+
+.imagen {
+  background-image: url(mickey-minnie2.webp);
+}

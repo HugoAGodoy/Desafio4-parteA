@@ -1,0 +1,169 @@
+/* (#6B8E23)
+(#A8B5BB)
+(#B33B3B)
+(#D4C05C) */
+
+body {
+    font-family: 'Cinzel';
+     /* width: 1700px; */
+    /* margin:auto;  */
+    background-color: #A8B5BB;
+   font-weight: 600;
+}
+
+h1 {
+    margin-left:20%;
+}
+
+.muscle {
+    content: url(gym1.webp);
+    float:left;
+    border-radius: 50%;
+}
+
+.pileta {
+    content:url(pileta2.webp);
+    float:right;
+    margin-right: 80px;
+    margin-left:50px;
+    margin-bottom: 10px;;
+}
+
+
+.dibus {
+    opacity: 0;
+}
+
+.no-borde {
+    border-color: transparent;
+}
+
+
+.title-retro {
+    margin-left: 120px;
+    font-size:larger;
+}
+
+.campo-top {
+    margin-top: 14px;
+    margin-left: 10px;    
+}
+
+.campo-top:hover{
+    background-color: #f0e29c;
+}
+
+.marg1 {
+    margin-left: 25px;
+}
+
+.marg2{ 
+    margin-left: 37px;
+}
+
+.marg3{
+    margin-left: 50px;
+}
+
+.contanos-retro{
+    max-height: 50px;
+    min-height: 50px;
+    min-width: 370px;
+    width:30%;
+    max-width: 900px;
+}
+
+.ancho-caja {
+    min-width:350px;
+    max-width:400px;
+    width:20%;
+}
+
+  .bloque-retro {
+    display:block;
+    margin-bottom: 20px;
+    
+}
+
+.campo-retro {
+ margin-bottom: 20px;
+ width:230px;
+}
+
+.campo-retro:hover {
+    background-color: #f0e29c;
+}
+
+.datos {
+    width:60%;
+    margin-left: 2%;
+    background-color: #6B8E23;
+}
+
+.karate {
+    width:80%;
+    float:right;
+    margin-right: 2px;
+    background-color: #B33B3B;   
+}
+
+.contacto {
+    padding:20px;
+    float:right;
+    
+}
+
+.sedes {
+    margin-right:5%;
+    width:80%;
+    float:right;
+    margin-left:15%;
+    box-sizing:border-box;
+    padding-left: 10%; 
+    background-color: #B33B3B;  
+}
+
+.inscripcion {
+    margin-left:25%;
+    width:80%;
+}
+
+.acepto:hover{
+    background-color: #f0e29c;
+  }
+
+.recibir:hover{
+    background-color: #f0e29c;
+  }
+
+.boxeo {
+   content:url(box1.webp);
+   float:right;
+   border-radius: 50%;
+}
+  
+.palermo{
+  margin-left:30px;
+}
+
+.palermo:hover{
+    background-color: #f0e29c;
+    width:27%;
+}
+
+.rosario{
+    margin-left:40px;
+}
+
+.rosario:hover{
+    background-color: #f0e29c;
+    width:30%;
+}
+
+.boton1:hover {
+    background-color: #f0e29c;
+  }
+
+.boton2:hover {
+    background-color: #f0e29c;
+  }

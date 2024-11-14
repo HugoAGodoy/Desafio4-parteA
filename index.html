@@ -12,53 +12,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    
-    <title>Afiliación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    
+<title>Afiliación</title>
 
     
   </head>
+
   <body>
-    <div class="titulo-arriba"></div>
-   <h1>Vení al Gym!💪🏼</h1>
+    
+   <h1>Vení al Gym! <span class="dibus">💪🏼</span></h1>
    
    <form action=" https://postman-echo.com/post" method="post" target="_blank">
       
-    <fieldset>
+    <fieldset class="karate"> 
+      
+       <legend class="titulos title-retro"><span class="dibus">🙋🏼‍♂️</span>Datos Personales<span class="dibus">👀</span></legend>
+      
+       <div class="muscle"></div> 
        
-        <legend class="titulos">🙋🏼‍♂️Datos Personales👀</legend>
-        
         <div class="mi-div">
           <label for="lbl-nombre" class="bloque">Nombre:*</label>
-          <input type="text" name="nombre" id="lbl-nombre" required class="campo-entrada" >
+          <input type="text" name="nombre" id="lbl-nombre" required class="campo-entrada campo-top" >
         </div>
 
         <div>
-          <label for="lbl-apellido" class="bloque">Apellido:*</label>
-          <input type="text" name="apellido" id="lbl-apellido" required class="campo-entrada">
+          <label for="lbl-apellido" class="bloque marg1">Apellido:*</label>
+          <input type="text" name="apellido" id="lbl-apellido" required class="campo-entrada campo-top">
+        </div>
+
+        <div>
+          <label for="lbl-dni" class="bloque marg2">Documento:*</label>
+          <input type="number" name="dni" id="lbl-dni" required class="campo-entrada campo-top">
+        </div>
+          
+        <div>
+          <label for="lbl-pais" class="bloque marg3">Nacionalidad:*</label>
+          <input list="nacion" type="text" name="nacionalidad" id="lbl-pais" placeholder=" - Seleccionar -" required class="campo-pais campo-top">
+          <datalist id="nacion">
+            <option value="Argentina">
+            <option value="Brasileña">
+            <option value="Uruguaya">
+            <option value="Otra">  
+          </datalist>
         </div>
 
           <div>
-            <label for="lbl-dni" class="bloque">Documento:*</label>
-            <input type="number" name="dni" id="lbl-dni" required class="campo-entrada">
-          </div>
-          
-          <div>
-            <label for="lbl-pais" class="bloque">Nacionalidad:*</label>
-            <input list="nacion" type="text" name="nacionalidad" id="lbl-pais" placeholder=" - Seleccionar -" required class="campo-pais">
-            <datalist id="nacion">
-              <option value="Argentina">
-              <option value="Brasileña">
-              <option value="Uruguaya">
-              <option value="Otra">
-              
-            </datalist>
-          </div>
-
-          <div>
-            <label>Contanos un poco de vos...</label>
-           <textarea name="descripcion"  cols="30" rows="3" class="campo-entrada bloque campo-descripcion" ></textarea>
+            <label class="marg1">Contanos un poco de vos...</label>
+           <textarea name="descripcion"  cols="30" rows="3" class="campo-entrada bloque campo-descripcion campo-top contanos-retro"></textarea>
           </div>
         
-          <fieldset>
+          <fieldset class="sexo campo-top ancho-caja no-borde">
            
               <legend>Sexo:*</legend>
               
@@ -68,36 +82,47 @@
               <label for="masc">Masculino</label>
               <input type="radio" name="sexo" value="otro" required id="o">
               <label for="o">Otro</label>
-      
+            
           </fieldset>    
             
-        </fieldset>
-        
+    </fieldset>
+     
         <div class="bolas"></div>
      
 
-      <fieldset>
-        <legend class="titulos">📱Datos de contacto📧</legend>
+    <fieldset class="datos">
+
+      <legend class="titulos title-retro"><span class="dibus">📱</span>Datos de contacto<span class="dibus">📧</span></legend>
        
-        <div>
-          <label for="lbl-tel" class="bloque">Telefono:*</label>
-          <input type="number" placeholder="Código de área y número" id="lbl-tel" required class="campo-entrada">
-        </div>
+        <div class="pileta"></div> 
+       
+        <div class="contacto"> 
+         <div>
+           <label for="lbl-tel" class="bloque2 bloque-retro">Telefono:*</label>
+           <input type="number" placeholder="Código de área y número" id="lbl-tel" required class="campo-entrada campo-retro">
+         </div>
 
-        <div>
-          <label for="lbl-email" class="bloque">Dirección de correo electrónico:*</label>
-          <input type="email" placeholder="Ej:mail@gmail.com" id="lbl-email" required class="campo-entrada">
-        </div>
-
-      </fieldset>
+         <div>
+           <label for="lbl-email" class="bloque2 bloque-retro">Dirección de correo electrónico:*</label>
+           <input type="email" placeholder="Ej:mail@gmail.com" id="lbl-email" required class="campo-entrada campo-retro">
+         </div>
+      
+       </div>
+    </fieldset>
 
       <div class="bolas"></div>
 
-      <fieldset>
-        <legend class="titulos">🚴🏼‍♂️Actividades🤸🏼‍♂️</legend>
-        <p>Por favor, indicá cuáles actividades te interesan.</p>
+    <fieldset  class="rocky sedes">
 
-       <p>Sede Palermo:</p>
+        <legend class="titulos title-retro"><span class="dibus">🚴🏼‍♂️</span>Actividades<span class="dibus">🤸🏼‍♂️</span></legend>
+
+        <div class="boxeo"></div>
+
+        <p class="izq">Por favor, <br>indicá cuáles actividades <br>te interesan.<br></p>
+       
+        <div class="izq palermo">
+       
+        <p>Sede Palermo:</p>
 
         <input type="checkbox" name="deportes" value="Basquet" id="basq">
         <label for="basq">Básquet</label>
@@ -107,10 +132,12 @@
         <label for="fulbo">Futbol</label>
         <input type="checkbox" name="deportes" value="Tenis" id="ten">
         <label for="ten">Tenis</label>
-      
 
-      
-        <p>Sede Palermo</p>
+       </div>
+
+       <div class="der rosario">
+        
+        <p>Sede Rosario</p>
 
         <input type="checkbox" name="deportes" value="Basquet" id="basq2">
         <label for="basq2">Básquet</label>
@@ -120,33 +147,35 @@
         <label for="fulbo2">Futbol</label>
         <input type="checkbox" name="deportes" value="Tenis" id="ten2">
         <label for="ten2">Tenis</label>
-      
-
-      </fieldset>
-      
-      <div>
-      <input type="checkbox" required>
-      <label class="blanco">Acepto las condiciones*</label>
-      
       </div>
 
-      <div>
-        <input type="checkbox">
-        <label class="blanco">Deseo recibir novedades</label>
-       
-        </div>
-        
-        <p class="blanco">*:campo obligatorio.</p>
-
-        <button type="submit" >Iniciar afiliación</button>
-        <button type="reset">Restablecer</button>
-
-        </form>
+    </fieldset>
+    
+    
+      <div class="inscripcion">  
       
+      <div class="inline">
+        <input id="aceptar" type="checkbox" required>
+        <label for="aceptar" class="blanco acepto">Acepto las condiciones*</label>
+      </div>
 
-
+      <div class="inline">
+        <input id="novedades" type="checkbox">
+        <label for="novedades" class="blanco recibir">Deseo recibir novedades</label>
+      </div>
 
     
-    <script type="module" src="/main.js"></script>
+        <p class="blanco">*:campo obligatorio.</p>
+
+        <button class="boton1" type="submit" >Iniciar afiliación</button>
+        <button class="boton2" type="reset">Restablecer</button>
+     
+      </div>
+       
+   </form>
+    
+   <script type="module" src="/main.js"></script>
+
   </body>
+
 </html>
